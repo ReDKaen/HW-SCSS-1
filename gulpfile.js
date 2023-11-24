@@ -21,9 +21,9 @@ const scss = () => {
 };
 
 const moveImages = () => {
-    return gulp.src('src/images/*.jpg') 
-      .pipe(gulp.dest('dist/images')); 
-  };
+    return gulp.src('./src/image/*.**') 
+      .pipe(gulp.dest('./dist/images')); 
+};
 
 const claenDist = () => {
     return gulp.src("./dist", {read: false}).pipe(gulpClean());
@@ -32,8 +32,7 @@ const claenDist = () => {
 const watcher = () => {
     gulp.watch("./src/**/*.html", html).on('change', browserSync.reload);
     gulp.watch("./src/styles/**/*.{scss,sass,css}", scss).on("all", browserSync.reload);
-    gulp.watch("./src/scripts/**/*.js", js).on('change', browserSync.reload);
-};
+}
 
 const server = () => (
     browserSync.init({
