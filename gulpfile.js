@@ -1,7 +1,6 @@
 const gulp = require("gulp");
 const htmlMin = require("gulp-htmlmin");
 const concat = require("gulp-concat");
-const minify = require("gulp-minify");
 const gulpClean = require("gulp-clean");
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
@@ -21,11 +20,10 @@ const scss = () => {
         .pipe(gulp.dest("./dist/styles"))
 };
 
-const js = () => {
-    return gulp.src("./src/scripts/**/*.js")
-        .pipe(concat("app.js"))
-        .pipe(gulp.dest("./dist/scripts"));
-}
+const moveImages = () => {
+    return gulp.src('src/images/*.jpg') 
+      .pipe(gulp.dest('dist/images')); 
+  };
 
 const claenDist = () => {
     return gulp.src("./dist", {read: false}).pipe(gulpClean());
@@ -45,9 +43,9 @@ const server = () => (
     })
 )
 
-gulp.task("build", gulp.series(claenDist, gulp.parallel(html, scss, js)));
+gulp.task("build", gulp.series(claenDist, gulp.parallel(html, scss, moveImages)));
 
 gulp.task("dev", gulp.series(
-    gulp.parallel(html, scss, js),
+    gulp.parallel(html, scss, ),
     gulp.parallel(server, watcher)
 ));
