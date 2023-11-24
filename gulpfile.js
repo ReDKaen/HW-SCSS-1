@@ -22,7 +22,7 @@ const scss = () => {
 
 const moveImages = () => {
     return gulp.src('./src/image/*.**') 
-      .pipe(gulp.dest('./dist/images')); 
+      .pipe(gulp.dest('./dist/image')); 
 };
 
 const claenDist = () => {

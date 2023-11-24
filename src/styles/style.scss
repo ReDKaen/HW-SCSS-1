@@ -1,3 +1,90 @@
 body{
     background-color: #171717;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.header__logo{
+    height: 40px;
+    width: 180px;
+}
+
+.header__phone-button{
+    text-align: center;
+    border: 1px solid #E4B564;
+    width: 160px;
+    padding: 7px;
+   height: 25px;
+
+   a{
+    text-decoration: none;
+    color: #E4B564;
+   }
+}
+
+.main{
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.main__title{
+    font-family: "Gilam", sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.main__subtitle{
+    font-family: "Gilam", sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+
+
+
+
+.project-block{
+    background-color: #0E0E0E;
+    margin-bottom: 150px;
+}
+
+.project-block__info{
+    padding-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-block__info-title{
+    font-family: "Gilam", sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.project-block__info-button{
+    border: 1px solid #E4B564;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: #E4B564;
+    }
+}
