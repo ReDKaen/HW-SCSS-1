@@ -50,10 +50,124 @@ body{
     line-height: 28px;
 }
 
+.main__box-wrraper__bio-info{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    p{
+        color: #FFF;
+        text-align: center;
+        font-family: "Gilam", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
 
+.main__box-wrraper__bio-info__element{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+    &:nth-child(1){
+        grid-area: 1 / 1 / 2 / 3;
+        height: 300px;
+        background: #634F2C;
+    }
+    &:nth-child(2){
+        grid-area: 1 / 3 / 2 / 5;
+        height: 300px;
+        background: #B4A385;
+    }
+    &:nth-child(3){
+        grid-area: 1 / 5 / 2 / 7;
+        height: 300px;
+        background: #E4B564;
+    }
+    &:nth-child(4){
+        grid-area: 2 / 1 / 3 / 4;
+        height: 300px;
+        background: #635A4A;
+    }
+    &:nth-child(5){
+        grid-area: 2 / 4 / 3 / 7;
+        height: 300px;
+        background: #B08C4D;
+    }
+}
 
+.main__box-wrraper__transport {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 150px;
+    P{
+        color: #FFF;
+        font-family: 'Gilam', sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    span{
+        color: #FFF;
+        font-family: 'Gilam', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 30px;
+    }
+}
 
+.main__box-wrraper__transport-element-1{
+    background-color: #0E0E0E;
+    grid-area: 1 / 1 / 3 / 2;
+    height: 300px;
+}
 
+.main__box-wrraper__transport-element-2{
+    background-color: #1F1F1F;
+    grid-area: 3 / 1 / 6 / 2;
+    height: 500px;
+}
+
+.main__box-wrraper__transport-element-3{
+    background-color: #242424;
+    grid-area: 1 / 2 / 4 / 3;
+    height: 500px;
+}
+
+.main__box-wrraper__transport-element-4{
+    background-color: #E4B564;
+    grid-area: 4 / 2 / 6 / 3;
+    height: 300px;
+}
+
+.main__box-wrraper__transport-element-5{
+    background-color: #1F1F1F;
+    grid-area: 1 / 3 / 2 / 4;
+    height: 250px;
+}
+
+.main__box-wrraper__transport-element-6{
+    background-color: #0E0E0E;
+    grid-area: 2 / 3 / 5 / 4;
+    height: 280px;
+}
+
+.main__box-wrraper__transport-element-7{
+    background-color: #0A0909;
+    grid-area: 5 / 3 / 6 / 4;
+    height: 250px;
+}
 
 .project-block{
     background-color: #0E0E0E;
@@ -79,12 +193,57 @@ body{
 .project-block__info-button{
     border: 1px solid #E4B564;
     height: 30px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     a{
         text-decoration: none;
         color: #E4B564;
+    }
+}
+
+.project-block__box-wrraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 40px;
+}
+
+.project-block__box-elment{
+    height: 345px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p{
+        color: #FFF;
+        text-align: center;
+        font-family: "Gilam", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    &:nth-child(1){
+        background: #634F2C;
+    }
+    &:nth-child(2){
+        background: rgba(232, 210, 171, 0.7);
+    }
+    &:nth-child(3){
+        background: #E4B564;
+    }
+    &:nth-child(4){
+        background: #635A4A;
+    }
+    &:nth-child(5){
+        background: #B08C4D;
+    }
+    &:nth-child(6){
+        background: #634F2C;
     }
 }
